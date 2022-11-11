@@ -19,13 +19,14 @@
 
   <body>
     <header>
-      <div class="logo">Thinkfulbnb</div>
+      <div class="logo">Thinkfulbnb</div>   
       <nav>
         <ul id="menu">
-          <li><a>Stay</a></li>
-          <li><a>About</a></li>
-          <li><a>Ideas</a></li>
-          <li><a>Host</a></li>
+          <!-- added a href link with a hashtag so the links can reference the appropriate spots on the page. -->
+          <li><a href="#stay">Stay</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#ideas">Ideas</a></li>
+          <li><a href="#host">Host</a></li>
         </ul>
       </nav>
     </header>
@@ -35,69 +36,120 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
+        <!-- Created a form for the location, arrive, depart and type when looking for a vacation rental with the appropriate placeholders and drop down menu -->
+        <form>
+          <div>
+            <label for="">Location</label>
+            <input type="text" id="" placeholder="Search Destination">
+          </div>
+          <div>
+            <label for="">Arrive</label>
+            <input type="date" id="">
+          </div>
+          <div>
+            <label for="">Depart</label>
+            <input type="date" id="">
+          </div>
+          <div>
+            <label for="">Type</label>
+            <select type="" id="">
+              <!-- created 7 options for the drop down menu using <option> -->
+              <option value="Apartment">Apartment</option>
+              <option value="Barn">Barn</option>
+              <option value="Castle">Castle</option>
+              <option value="Houseboat">Houseboat</option>
+              <option value="Tinyhouse">Tiny House</option>
+              <option value="Yacht">Yacht</option>
+              <option value="Yurt">Yurt</option>
+            </select>
+          </div>
+          <!-- Created a button to submit the filters a person has applied for their vacation rental -->
+          <button type="Submit">Search</button>
+        </form>
       </section>
 
       <!-- About -->
+      <!-- put the images and paragrapgh in a div to make the desktop view have the images side by side with the catption on the side and the mobile view images and caption be stacked on top of one another-->
       <section id="about" class="alternate-background">
         <h2>About</h2>
+        <div>
+          <img
+            src="images/vacation-rental-pool.png"
+            alt="Thinkfulbnb - Vacation rental pool"
+          />
 
-        <img
-          src="images/vacation-rental-pool.png"
-          alt="Thinkfulbnb - Vacation rental pool"
-        />
+          <img
+            src="images/vacation-rental-inside-stone.png"
+            alt="Thinkfulbnb - Vacation rental inside stone"
+          />
 
-        <img
-          src="images/vacation-rental-inside-stone.png"
-          alt="Thinkfulbnb - Vacation rental inside stone"
-        />
-
-        <p>
-          Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
-          fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
-          porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
-          neque, at tempus lorem. Aenean mi magna, posuere at quam sed, euismod
-          gravida neque.
-        </p>
+          <p>
+            Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
+            fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
+            porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
+            neque, at tempus lorem. Aenean mi magna, posuere at quam sed,
+            euismod gravida neque.
+          </p>
+        </div>
       </section>
 
       <!-- Ideas -->
+      <!-- put the first two images and first paragraph in a div to make the desktop view have the images side by side with the catption on the side and the mobile view images and caption be stacked on top of one another and did the same with the last two images and last paragraph-->
       <section id="ideas">
         <h2>Ideas</h2>
-        <h3>Forest retreats</h3>
-        <img
-          src="images/forest-retreat.png"
-          alt="Thinkfulbnb - Forest retreat"
-        />
-        <h3>Beaches</h3>
-        <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
-
-        <h3>Rustic cabins</h3>
-        <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
-
-        <h3>Pet-friendly</h3>
-        <img src="images/pet-friendly.png" alt="Thinkfulbnb - Pet-friendly" />
+        <div class="row">
+          <div>
+            <h3>Forest retreats</h3>
+            <img
+              src="images/forest-retreat.png"
+              alt="Thinkfulbnb - Forest retreat"
+            />
+          </div>
+          <div>
+            <h3>Beaches</h3>
+            <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <h3>Rustic cabins</h3>
+            <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
+          </div>
+          <div>
+            <h3>Pet-friendly</h3>
+            <img
+              src="images/pet-friendly.png"
+              alt="Thinkfulbnb - Pet-friendly"
+            />
+          </div>
+        </div>
       </section>
 
       <!-- Host -->
+      <!-- put the image and paragraph in a div to make the desktop view have the image side by side with the catption on the side and the mobile view images and caption be stacked on top of one another-->
       <section id="host" class="alternate-background">
-        <h2>Want to Become a Thinkfulbnb Host?</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          molestie in est id efficitur. Sed hendrerit ut turpis quis dapibus.
-          Nam sit amet iaculis lectus. Aliquam erat volutpat. Praesent rhoncus
-          pellentesque eros in aliquet. Sed accumsan elit lacus, id ultrices
-          libero rutrum vitae.
-        </p>
-        <ul>
-          <li>Mauris in pellentesque ligula.</li>
-          <li>Sed accumsan elit lacus, id ultrices libero rutrum vitae.</li>
-          <li>Nunc vitae ex eget neque pellentesque porttitor.</li>
-          <li>Cras mollis lorem sagittis sapien imperdiet blandit. Vivamus.</li>
-          <li>
-            Donec vehicula ipsum nisi, eu consectetur leo feugiat et. Fusce eget
-            hendrerit mauris.
-          </li>
-        </ul>
+        <div>
+          <h2>Want to Become a Thinkfulbnb Host?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            molestie in est id efficitur. Sed hendrerit ut turpis quis dapibus.
+            Nam sit amet iaculis lectus. Aliquam erat volutpat. Praesent rhoncus
+            pellentesque eros in aliquet. Sed accumsan elit lacus, id ultrices
+            libero rutrum vitae.
+          </p>
+          <ul>
+            <li>Mauris in pellentesque ligula.</li>
+            <li>Sed accumsan elit lacus, id ultrices libero rutrum vitae.</li>
+            <li>Nunc vitae ex eget neque pellentesque porttitor.</li>
+            <li>
+              Cras mollis lorem sagittis sapien imperdiet blandit. Vivamus.
+            </li>
+            <li>
+              Donec vehicula ipsum nisi, eu consectetur leo feugiat et. Fusce
+              eget hendrerit mauris.
+            </li>
+          </ul>
+        </div>
 
         <img src="images/become-a-host.png" alt="Thinkfulbnb - Become a host" />
       </section>
